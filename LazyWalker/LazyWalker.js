@@ -40,6 +40,7 @@ myFunction();
 // https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
 
 
+// download text
 function download(filename, text) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -55,3 +56,18 @@ function download(filename, text) {
 
 // Start file download.
 download("hello.txt","This is the content of my file :)")
+
+
+
+
+
+// open img
+var a = document.createElement("a");
+url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRY1c6eNWb4F2YRiyAW44p4Lepy0dGyKTSGBqD8kH45wjGuELXZQ'
+a.href = url;
+fileName = url.split("/").pop();
+a.download = fileName;
+document.body.appendChild(a);
+a.click();
+window.URL.revokeObjectURL(url);
+a.remove();
