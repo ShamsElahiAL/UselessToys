@@ -71,3 +71,25 @@ document.body.appendChild(a);
 a.click();
 window.URL.revokeObjectURL(url);
 a.remove();
+
+
+
+
+
+
+
+
+
+// another file opener
+function downloadURI(uri, name) {
+  var link = document.createElement("a");
+  link.download = name;
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  delete link;
+}
+And the following example shows it's use:
+
+downloadURI("data:text/html,HelloWorld!", "helloWorld.txt");
