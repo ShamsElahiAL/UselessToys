@@ -19,3 +19,15 @@ function myFunction() {
 }
 
 myFunction();
+
+
+
+
+// Text gulo ei - x - er div theke pawa jabe
+// img er link ta pawa jabe
+// oita arekta line e open kore
+// spotlight class e image tar static version pawa jabe
+// oikhan theke download korte hobe.
+
+//ezpz
+//rtz
