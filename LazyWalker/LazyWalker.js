@@ -93,3 +93,27 @@ function downloadURI(uri, name) {
 And the following example shows it's use:
 
 downloadURI("data:text/html,HelloWorld!", "helloWorld.txt");
+
+
+
+
+
+
+
+
+
+var images = document.getElementsByTagName('img');
+var srcList = [];
+var i = 0;
+
+setInterval(function(){
+    if(images.length > i){
+        srcList.push(images[i].src);
+        var link = document.createElement("a");
+        link.id=i;
+        link.download = images[i].src;
+        link.href = images[i].src;
+        link.click();
+        i++;
+    }
+},1500);
