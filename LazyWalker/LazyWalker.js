@@ -1,3 +1,19 @@
+// Infinite Scroller - v2 - Can break !
+
+// Start
+var T = setInterval(function scrollW()
+{
+window.scrollTo(0, document.body.scrollHeight);
+}, 3000);
+
+
+// Stop
+function myStopFunction() {
+  clearInterval(T);
+}
+
+
+
 // Infinite Scroller
 function T()
 {setInterval(function scrollW()
