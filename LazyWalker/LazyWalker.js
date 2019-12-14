@@ -14,6 +14,13 @@ function myStopFunction() {
 
 
 
+// get all by class
+var x = document.querySelectorAll(".QTGV3c");
+
+
+
+
+
 // Infinite Scroller
 function T()
 {setInterval(function scrollW()
