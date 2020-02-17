@@ -18,6 +18,9 @@ function myStopFunction() {
 var x = document.querySelectorAll(".QTGV3c");
 
 
+//m.fb.com
+// Click strong text
+//$('strong').click();
 
 
 
