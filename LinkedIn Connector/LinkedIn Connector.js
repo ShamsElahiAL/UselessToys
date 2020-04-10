@@ -13,7 +13,7 @@ var scrollLoop = setInterval(function(){
         clearInterval(connectLoop);
         alert("Done Connecting!");
       }
-    }, 1500);
+    }, 60000);
   }
   window.scrollTo(0, document.body.scrollHeight);
 }, 500);
