@@ -1,6 +1,6 @@
 // https://www.linkedin.com/mynetwork/
 
-var peopleToConnect = 20;
+var peopleToConnect = 100;
 var scrollLoop = setInterval(function(){
   var connectArr = document.querySelectorAll("button[data-control-name='invite'");
   if(connectArr.length >= peopleToConnect){
